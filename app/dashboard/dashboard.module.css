@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  height: 100vh;
+}
+
+.menu {
+  flex: 1;
+  background-color: var(--bgSoft);
+}
+
+.content {
+  flex: 4;
+  padding: 2rem;
+}

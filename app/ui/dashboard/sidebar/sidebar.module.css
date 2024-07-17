@@ -1,0 +1,48 @@
+.container {
+  position: sticky;
+  top: 40px;
+  min-height: 100vh;
+  padding: 2rem;
+}
+.user {
+  text-align: center;
+}
+.userImage {
+  display: inline-block;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+}
+.userDetail {
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--bg);
+}
+.userName {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.userRole {
+  font-size: 1rem;
+  color: var(--textSoft);
+}
+.list {
+  list-style: inside none;
+}
+.itemLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.itemLink:hover {
+  color: var(--textSoft);
+}
+.itemIcon {
+  margin-right: 10px;
+}
+.itemText {
+  font-size: 1.2rem;
+}
