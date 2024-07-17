@@ -1,9 +1,8 @@
-import Link from "next/link";
 import React from "react";
 import styles from './sidebar.module.css';
 import Image from "next/image";
-
 import { MdDashboard, MdLogout, MdOutlineVerifiedUser, MdTableChart } from 'react-icons/md';
+import MenuItem from "./menuItem";
 
 const menuItems = [
   {
@@ -37,7 +36,7 @@ const Sidebar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.user}>
-        <Image src="/noavatar.png" alt="User" width={40} height={40} className={styles.userImage}/>
+        <Image src="/noavatar.png" alt="User" width={40} height={40} className={styles.userImage} />
         <div className={styles.userDetail}>
           <p className={styles.userName}>John Doe</p>
           <p className={styles.userRole}>Administrator</p>
@@ -45,19 +44,10 @@ const Sidebar = () => {
       </div>
       {menuItems.map((item, index) => (
         <div key={index}>
-          <h3>{item.title}</h3>
+          <h3 className={styles.menuSectionTitle}>{item.title}</h3>
           <ul className={styles.list}>
             {item.list.map((menuItem, index) => (
-              <li key={index}>
-                <Link href={menuItem.path} className={styles.itemLink}>
-                  <div className={styles.itemIcon}>
-                    {menuItem.icon}
-                  </div>
-                  <div className={styles.linkText}>
-                    {menuItem.title}
-                  </div>
-                </Link>
-              </li>
+              <MenuItem index={index} item={menuItem} />
             ))}
           </ul>
         </div>

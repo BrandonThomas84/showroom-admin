@@ -1,0 +1,19 @@
+.item:hover {
+  color: var(--textSoft);
+  background-color: var(--bg);
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 10px 20px;
+}
+.icon {
+  margin-right: 10px;
+}
+.text {
+  font-size: 1.2rem;
+}
