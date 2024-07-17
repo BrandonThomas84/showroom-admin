@@ -3,7 +3,6 @@ import styles from './menuItem.module.css'
 import Link from 'next/link';
 
 type MenuItemProps = {
-  index: number;
   item: {
     path: string;
     icon: React.ReactNode;
@@ -11,9 +10,9 @@ type MenuItemProps = {
   }
 }
 
-const MenuItem = ({ index, item }: MenuItemProps) => {
+const MenuItem = ({ item }: MenuItemProps) => {
   return (
-    <li key={index} className={styles.item}>
+    <li className={styles.item}>
       <Link href={item.path} className={styles.link}>
         <div className={styles.itemIcon}>
           {item.icon}

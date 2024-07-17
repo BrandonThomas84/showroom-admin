@@ -5,7 +5,8 @@
 .link {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -16,4 +17,5 @@
 }
 .text {
   font-size: 1.2rem;
+  margin-left: 10px;
 }

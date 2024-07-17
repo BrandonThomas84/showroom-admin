@@ -1,0 +1,15 @@
+.button {
+  background-color: var(--buttonBg);
+  color: var(--textSoft);
+}
+
+.button:hover {
+  background-color: var(--buttonSoft);
+  color: var(--text)
+}
+
+.button:active {
+  background-color: var(--buttonBg);
+  color: var(--textSoft);
+  border: 1px solid var(--buttonSoft);
+}

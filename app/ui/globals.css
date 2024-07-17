@@ -1,8 +1,12 @@
 :root {
-  --bg: #151c2c;
-  --bgSoft: #182237;
+  --bg: #1a1625;
+  --bgSoft: #2f2b3a;
   --text: white;
   --textSoft: #b7bac1;
+  --linkColor: #5e5a66;
+  --linkSoft: #908d96;
+  --buttonBg: #76737e;
+  --buttonSoft: #908d96;
 }
 
 * {
